@@ -4,10 +4,8 @@ ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
 WORKDIR /app
 
-
 FROM yarn as builder
 
-COPY .yarn .yarn
 COPY src src
 COPY .yarnrc.yml package.json yarn.lock ./
 
