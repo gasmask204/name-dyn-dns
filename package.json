@@ -1,0 +1,25 @@
+{
+  "name": "dns-updater",
+  "packageManager": "yarn@4.9.2",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsx ./src/index.ts",
+    "bundle": "pkgroll --clean-dist --minify"
+  },
+  "dependencies": {
+    "config": "^4.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/config": "^3.3.5",
+    "@types/js-yaml": "^4",
+    "@types/node": "^22.0.0",
+    "pkgroll": "^2.12.2",
+    "prettier": "^3.5.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
